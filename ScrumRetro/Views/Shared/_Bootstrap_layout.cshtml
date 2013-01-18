@@ -6,23 +6,24 @@
         <title>@ViewBag.Title - My ASP.NET MVC Application</title>
         <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
         <meta name="viewport" content="width=device-width" />
-        @Styles.Render("~/Content/css")
-        @Scripts.Render("~/bundles/modernizr")
+        @Styles.Render("~/Content/themes/base/bootstrap.css")
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/Scripts/bootstrap.js")
 </head>
 <body>
 
+    @{Html.RenderPartial("MenuNav");}
+
     <div class="container-fluid">
-      <div class="row-fluid">
-        <div class="span2">
-          <!--Sidebar content-->
+      <div class="row-fluid"><br /><br /><br />
+        <div class="span2 well">
+          This is text
         </div>
-        <div class="span10">
+        <div class="span9 well">
           @RenderBody()
         </div>
       </div>
     </div>
 
-    @Scripts.Render("~/bundles/jquery")
-    @RenderSection("scripts", required: false)
 </body>
 </html>

@@ -28,5 +28,10 @@ namespace ScrumRetro.Controllers
 
             return View();
         }
+
+        public ActionResult Bootstrap()
+        {
+            return View();
+        }
     }
 }

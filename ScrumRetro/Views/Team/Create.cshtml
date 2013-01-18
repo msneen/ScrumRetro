@@ -1,0 +1,43 @@
+﻿@model ScrumRetro.Models.TeamModels
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Bootstrap_layout.cshtml";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Team Member</legend>
+
+        <div class="control-group">
+            <label class="control-label" for="inputEmail">First Name</label>
+            <div class="controls">
+                <input type="text" id="firstName" placeholder="First Name">
+            </div>
+        </div>
+        
+        <div class="control-group">
+            <label class="control-label" for="inputPassword">Last Name</label>
+            <div class="controls">
+                <input type="text" id="lastName" placeholder="Last Name">
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label" for="inputPassword">Role</label>
+            <div class="controls">
+                <input type="text" id="role" placeholder="Role">
+            </div>
+        </div>
+
+        <p><input type="submit" value="Create" class="btn" /></p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
