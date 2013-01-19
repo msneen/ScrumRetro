@@ -1,0 +1,24 @@
+﻿@model ScrumRetro.Models.SprintModels
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Bootstrap_layout.cshtml";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Sprint</legend>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
