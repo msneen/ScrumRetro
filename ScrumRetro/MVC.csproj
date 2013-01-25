@@ -331,6 +331,12 @@
   <ItemGroup>
     <Content Include="Views\Retrospect\Create.cshtml" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Tiers\Tiers.csproj">
+      <Project>{F5A363D8-CBA4-4D09-9CB4-9278E59C752A}</Project>
+      <Name>Tiers</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

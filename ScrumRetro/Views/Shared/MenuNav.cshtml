@@ -1,28 +1,38 @@
-﻿    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
- 
-          <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar">Test</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
- 
-          <!-- Be sure to leave the brand out there if you want it shown -->
-          <a class="brand" href="#">Sprint Retrospective</a>
- 
-          <!-- Everything you want hidden at 940px or less, place within here -->
-          <div class="nav-collapse collapse">
-            <!-- .nav, .navbar-search, .navbar-form, etc -->
-              <ul class="nav">
-                  <li>@Html.ActionLink("Home", "Bootstrap", "Home")</li>
-                  <li>@Html.ActionLink("Retrospect","Index","Retrospect")</li>
-                  <li>@Html.ActionLink("Team", "Index", "Team")</li>
-                  <li>@Html.ActionLink("Sprints", "Index", "Sprint")</li>
-              </ul>
-          </div>
- 
-        </div>
-      </div>
+﻿<div class="navbar">
+    <div class="navbar-inner">
+        <a class="brand" href="#">Sprint Retrospective</a>
+        <ul class="nav">
+            <li class="divider-vertical"></li>
+            <li id="Home">@Html.ActionLink("Home", "Bootstrap", "Home")</li>
+            <li class="divider-vertical"></li>
+            <li id="Retrospect">@Html.ActionLink("Retrospect", "Index", "Retrospect")</li>
+            <li class="divider-vertical"></li>
+            <li id="Team">@Html.ActionLink("Team", "Index", "Team")</li>
+            <li class="divider-vertical"></li>
+            <li id="Sprint">@Html.ActionLink("Sprints", "Index", "Sprint")</li>
+            <li class="divider-vertical"></li>
+        </ul>
     </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        var address = location.href;
+
+        if (address.indexOf('Home')) {
+            $('#Home').attr('class', 'active');
+        }
+
+        if (address.indexOf('Retrospect')) {
+            $('#Retrospect').attr('class', 'active');
+        }
+
+        if (address.indexOf('Team')) {
+            $('#Team').attr('class', 'active');
+        }
+
+        if (address.indexOf('Sprint')) {
+            $('#Sprint').attr('class', 'active');
+        }
+    });
+</script>

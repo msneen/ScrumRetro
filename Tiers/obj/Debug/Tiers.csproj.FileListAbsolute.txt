@@ -1,0 +1,5 @@
+C:\Users\John.Bales\Documents\Portfolio\ScrumRetro\Tiers\bin\Debug\Tiers.dll
+C:\Users\John.Bales\Documents\Portfolio\ScrumRetro\Tiers\bin\Debug\Tiers.pdb
+C:\Users\John.Bales\Documents\Portfolio\ScrumRetro\Tiers\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\John.Bales\Documents\Portfolio\ScrumRetro\Tiers\obj\Debug\Tiers.dll
+C:\Users\John.Bales\Documents\Portfolio\ScrumRetro\Tiers\obj\Debug\Tiers.pdb
